@@ -50,12 +50,12 @@ export const LeaderBoard = () => {
 
   return (
     <div className='mt-36 mx-32'>
-        <h1 className='text-9xl font-semibold'> Leaderboard</h1>
+        <h1 className='text-9xl font-semibold tracking-tight w-[675px]'> Leaderboard</h1>
 
         <div className='flex ml-[212px] gap-[300px]'>
                 {/* LeaderBoard-img start here */}
-            <div className='leaderboard-img'> 
-                <div className='leaderboard-topper flex gap-6 mt-24 '>
+            <div> 
+                <div className='flex gap-6 mt-24 '>
                     <div className='relative mt-20 text-center'>
                         <img className='h-[101px] w-[101px] rounded-full ' src={john} alt="" />
                         <p className='absolute left-1 top-0 bg-gray-400 rounded-full flex items-center justify-center h-7 w-7 font-bold'>2</p>
@@ -76,7 +76,7 @@ export const LeaderBoard = () => {
                     </div>
                 </div>
                     <div>
-                        <img  src={barchart} alt="" />
+                        <img src={barchart} alt="" />
                         <p className='w-[400px] h-28'></p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ export const LeaderBoard = () => {
                     <div className='flex gap-8 items-center'>
                         <div className='w-[500px] '>
                             {leaderboard.map((content, index) => (
-                        <div key={index} className='flex items-center text-start justify-between mb-5 mt-8 font-medium text-xl border-2 px-[15px] py-[10px] rounded-2xl border-black'>
+                        <div key={index} className='flex items-center text-start justify-between mb-5 mt-8 font-medium text-xl border-[1px] px-[15px] py-[10px] rounded-2xl border-black'>
                         <p>{content.position}</p>
                             <div className='w-[300px] flex items-center gap-5'>
                                 <img src={content.img} alt="" />
@@ -110,7 +110,7 @@ export const LeaderBoard = () => {
                     
                     <div className='w-[500px]'>
                         <p className='font-medium text-xl'>You</p>
-                        <div className='flex items-center text-start justify-between mb-5 mt-4 font-medium text-xl border-2 px-[15px] py-[10px] rounded-2xl border-black'>
+                        <div className='flex items-center text-start justify-between mb-5 mt-[15px] font-medium text-xl border-[1px] px-[15px] py-[10px] rounded-2xl border-black'>
                             <p>11</p>
                             <div className='w-[300px] flex items-center gap-5'>
                                 <img src={pic5} alt="" />
